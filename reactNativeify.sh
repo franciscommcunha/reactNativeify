@@ -367,6 +367,7 @@ main() {
   	echo "${GREEN}Installing dependencies for react-native-gesture-handler..."
   	npm i react-art;
   	npm i react-dom;
+  	npm i react-router-dom;
   	npm i react-native-web;
 
   	# installs and linkks navigation module
@@ -380,6 +381,7 @@ main() {
   	npm i react-native-router-flux --save
 
   	# installs redux and react-redux
+  	echo "${GREEN}Installing Redux..."
   	npm install --save redux;
   	npm install --save react-redux;
 
@@ -412,9 +414,11 @@ main() {
   	regenerateAppFile;
 
   	# creates requirements.txt
-  	createReaquirements;
+  	createRequirements;
 
   	echo "${GREEN}Complete Successfully"
+
+  	cd $projpath/$projname/;
 }
 
 main
